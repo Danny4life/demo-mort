@@ -14,6 +14,18 @@ public class Body {
     private String fileNumber;
     private String causeOfDeath;
 
+    @OneToOne
+    @JoinColumn(name = "patient_id")
+    private Patient patient;
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
+    }
+
     public Body() {
 
     }

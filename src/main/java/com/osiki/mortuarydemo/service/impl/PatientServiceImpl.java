@@ -36,7 +36,7 @@ public class PatientServiceImpl implements PatientService {
     }
 
     @Override
-    public Patient getPatientByFileNumber(String fileNumber) {
+    public Patient getPatientByFileNumber(Long fileNumber) {
         List<Patient> patients = new ArrayList<>();
 
 

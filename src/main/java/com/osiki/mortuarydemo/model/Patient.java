@@ -13,7 +13,7 @@ public class Patient {
 
     private Long id;
 
-    private String fileNumber;
+    private Long fileNumber;
     private String name;
     private LocalDate dateOfBirth;
     private LocalDate dateOfDeath;
@@ -23,7 +23,7 @@ public class Patient {
     }
 
 
-    public Patient(Long id, String fileNumber, String name, LocalDate dateOfBirth, LocalDate dateOfDeath) {
+    public Patient(Long id, Long fileNumber, String name, LocalDate dateOfBirth, LocalDate dateOfDeath) {
         this.id = id;
         this.fileNumber = fileNumber;
         this.name = name;
@@ -40,11 +40,11 @@ public class Patient {
         this.id = id;
     }
 
-    public String getFileNumber() {
+    public Long getFileNumber() {
         return fileNumber;
     }
 
-    public void setFileNumber(String fileNumber) {
+    public void setFileNumber(Long fileNumber) {
         this.fileNumber = fileNumber;
     }
 

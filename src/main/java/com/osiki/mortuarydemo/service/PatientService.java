@@ -12,5 +12,5 @@ public interface PatientService {
     Patient savePatient(Patient patient);
 
     Patient getPatientById(Long id);
-    Patient getPatientByFileNumber(String fileNumber);
+    Patient getPatientByFileNumber(Long fileNumber);
 }
